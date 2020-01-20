@@ -1,0 +1,222 @@
+@media (max-width: 900px) {
+    .left {
+        min-width: 75%;
+        margin-bottom: 10px;
+    }
+
+    .right {
+border-radius: 10px;
+        min-width: 75%;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main {
+    justify-content: space-around;
+    max-width: 900px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Aharoni;
+    color: bisque;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.left {
+    display: block;
+    width: 68%;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    padding: 10px;
+
+}
+
+.name {
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.n {
+    display: block;
+    border-radius: 2px;
+    width: 80%;
+    height: 25px;
+}
+
+.add {
+    display: block;
+    width: 18%;
+    color: slateblue;
+    background-color: ivory;
+    border-color: ivory;
+
+}
+
+.b {
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Aharoni;
+    border-bottom: 1px solid rgba(83, 0, 151, 0.69);
+}
+
+.part {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 33%;
+}
+
+.tomatoes {
+    text-decoration: line-through;
+}
+
+.num {
+    display: block;
+    width: 20px;
+    text-align: center;
+    color: #2c2b2a;
+    background-color: rgb(134, 122, 205);
+    border-radius: 20%;
+    padding: 2px;
+    margin: 4px;
+}
+
+.notBought {
+    display: block;
+    width: 55%;
+    font-family: Aharoni;
+    background-color: wheat;
+    border-color: wheat;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 15px;
+    color: midnightblue;
+}
+
+
+.product {
+    display: block;
+    width: 40px;
+}
+
+.num {
+    display: inline-block;
+    align-self: center;
+    width: 20px;
+    text-align: center;
+    color: #2c2b2a;
+    background-color: rgb(134, 122, 205);
+    border-radius: 20%;
+    padding: 2px;
+    margin: 4px;
+}
+
+.signs {
+    width: 28px;
+    height: 28px;
+    color: floralwhite;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px dimgrey;
+}
+
+.minus {
+    border-color: transparent;
+    background-color: rgba(255, 140, 140, 0.63);
+}
+
+.plus {
+    border-color: transparent;
+    background-color: rgba(2, 108, 0, 0.74);
+}
+
+.sh {
+    width: 55%;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.Buy {
+    width: 73%;
+    font-size: 15px;
+    font-family: Aharoni;
+    color: midnightblue;
+    background-color: wheat;
+    border-color: wheat;
+    border-radius: 7px;
+}
+
+.x {
+    text-align: center;
+    color: ghostwhite;
+    font-size: 15px;
+    font-family: Aharoni;
+    background-color: darkred;
+    border-color: darkred;
+    border-radius: 7px;
+}
+
+.right {
+    transition-property: width;
+    width: 25%;
+    height: 25%;
+    display: block;
+    color: blueviolet;
+    background-color: aliceblue;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.left:in-range {
+    width: 100%;
+}
+
+.right:in-range {
+    width: 100%;
+}
+
+.r {
+    border-bottom: 1px solid rgba(31, 24, 43, 0.69);
+    font-size: 30px;
+    font-family: "Berlin Sans FB";
+    color: rgba(31, 24, 43, 0.87);
+    justify-content: flex-start;
+    padding: 7px;
+}
+
+.pr {
+    display: block;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: dimgrey;
+    border-radius: 4px;
+    color: ghostwhite;
+    padding: 3px;
+    margin: 3px;
+}
+
+.bought {
+    text-decoration: line-through;
+}
+
+.circle {
+    display: inline;
+    font-size: 13px;
+    background-color: orange;
+    color: #2c2b2a;
+    border-radius: 70%;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin: 2px;
+}
+
+

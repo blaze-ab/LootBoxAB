@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loot Box</title>
+    <link rel="stylesheet" type="text/css" href="hw1.css"/>
+</head>
+<body bgcolor=#696969>
+<div class="flex main">
+    <div class=" left">
+        <div style="border-bottom:1px solid rgba(83, 0, 151, 0.69)">
+            <div class="flex name">
+                <input class="n" type="text" name="name" placeholder="Name">
+                <button class="add" type="button"> Add</button>
+            </div>
+        </div>
+        <div class="flex b">
+            <div class="part" style=" justify-content: flex-start;">
+                <div class="product tomatoes"> Tomatoes</div>
+            </div>
+            <div class="part" style=" justify-content: center;">
+                <div class="num"> 1</div>
+            </div>
+            <div class="part" style=" justify-content: flex-end;">
+                <button class="notBought" type="button"> Return</button>
+            </div>
+        </div>
+        <div class="flex b">
+            <div class="part" style=" justify-content: flex-start;">
+                <div class="product">Cookies</div>
+            </div>
+            <div class="part" style=" justify-content: center;">
+                <span>
+                <button class="signs minus" type="button"> - </button>
+                <div class="num"> 7 </div>
+                <button class="signs plus" type="button"> + </button>
+                </span>
+            </div>
+            <div class="part" style=" justify-content: flex-end;">
+                <div class="sh">
+                    <button class="Buy" type="button"> Buy</button>
+                    <button class="x" type="button"> x</button>
+                </div>
+            </div>
+        </div>
+        <div style="border: 0px;" class="flex b">
+            <div class="part" style=" justify-content: flex-start;">
+                <div class="product">Cheese</div>
+            </div>
+            <div class="part" style=" justify-content: center;">
+                <span>
+                <button class="signs minus" type="button"> - </button>
+                <div class="num"> 1 </div>
+                <button class="signs plus" type="button"> + </button>
+            </span>
+            </div>
+            <div class="part" style=" justify-content: flex-end;">
+                <div class="sh">
+                    <button class="Buy" type="button"> Buy</button>
+                    <button class="x" type="button"> x</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="r"> Left:</div>
+        <div class="flex r">
+            <div class="pr"> Cookies
+                <div class="circle"> 7</div>
+            </div>
+            <div class="pr"> Cheese
+                <div class="circle"> 1</div>
+            </div>
+        </div>
+        <div class="r"> Bought:</div>
+        <div style="border: 0px;" class="flex r bought">
+            <div class="pr"> Tomatoes
+                <div class="circle"> 1</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
