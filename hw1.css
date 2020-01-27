@@ -1,3 +1,18 @@
+@media print {
+    .creator{
+        visibility: hidden;
+    }
+
+    .creator .slide{
+        visibility: visible;
+        color: black;
+        background: ghostwhite;
+        border: 3px solid rebeccapurple;
+        bottom: 50px;
+        left: 15%;
+    }
+}
+
 @media (max-width: 900px) {
     .left {
         min-width: 75%;
@@ -5,8 +20,13 @@
     }
 
     .right {
-border-radius: 10px;
+        border-radius: 10px;
         min-width: 75%;
+    }
+
+    .TP:hover::before {
+        width: 100px;
+        white-space: pre-wrap;
     }
 }
 
@@ -50,12 +70,12 @@ border-radius: 10px;
 }
 
 .add {
+    position: relative;
     display: block;
     width: 18%;
     color: slateblue;
     background-color: ivory;
     border-color: ivory;
-
 }
 
 .b {
@@ -90,6 +110,7 @@ border-radius: 10px;
 }
 
 .notBought {
+    position: relative;
     display: block;
     width: 55%;
     font-family: Aharoni;
@@ -120,6 +141,7 @@ border-radius: 10px;
 }
 
 .signs {
+    position: relative;
     width: 28px;
     height: 28px;
     color: floralwhite;
@@ -140,12 +162,13 @@ border-radius: 10px;
 
 .sh {
     width: 55%;
-    display:flex;
+    display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .Buy {
+    position: relative;
     width: 73%;
     font-size: 15px;
     font-family: Aharoni;
@@ -156,6 +179,7 @@ border-radius: 10px;
 }
 
 .x {
+    position: relative;
     text-align: center;
     color: ghostwhite;
     font-size: 15px;
@@ -217,6 +241,88 @@ border-radius: 10px;
     padding-right: 4px;
     padding-left: 4px;
     margin: 2px;
+}
+
+.creator {
+    color: ivory;
+    background: rebeccapurple;
+    border-radius: 20px 20px 0 0;
+    width: 7%;
+    min-width: max-content;
+    height: 40px;
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+    left: 27%;
+    transition: all 0.5s ease;
+}
+
+.bl {
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.slide {
+    color: ivory;
+    background: rebeccapurple;
+    border-radius: 0 20px 0 0;
+    width: 15%;
+    min-width: max-content;
+    height: 40px;
+    position: fixed;
+    bottom: -52px;
+    left: 27%;
+    transition: all 0.5s ease;
+    padding: 6px;
+}
+
+.cb {
+    font-size: 15px;
+    text-align: center;
+}
+
+.ob {
+    font-size: 20px;
+    text-align: center;
+}
+
+.creator:hover {
+    background: crimson;
+    bottom: 40px;:
+}
+
+.creator:hover .slide {
+    background: crimson;
+    bottom: 0px;
+}
+
+.TP:before {
+    content: attr(data-tooltip);
+    visibility: hidden;
+    transform: scale(0, 0);
+    pointer-events: none;
+    background-color: crimson;
+    color: ivory;
+    font-size: 15px;
+    white-space: nowrap;
+    font-family: Arial;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    left: -50%;
+    bottom: 0%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.TP:hover::before {
+    visibility: visible;
+    transform:  scale(1, 1);
+    bottom: 110%;
+    opacity: 1;
 }
 
 
