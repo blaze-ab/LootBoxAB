@@ -1,9 +1,9 @@
 @media print {
-    .creator{
+    .creator {
         visibility: hidden;
     }
 
-    .creator .slide{
+    .creator .slide {
         visibility: visible;
         color: black;
         background: ghostwhite;
@@ -90,23 +90,7 @@
 
 .part {
     display: flex;
-    flex-wrap: nowrap;
     width: 33%;
-}
-
-.tomatoes {
-    text-decoration: line-through;
-}
-
-.num {
-    display: block;
-    width: 20px;
-    text-align: center;
-    color: #2c2b2a;
-    background-color: rgb(134, 122, 205);
-    border-radius: 20%;
-    padding: 2px;
-    margin: 4px;
 }
 
 .notBought {
@@ -125,7 +109,9 @@
 
 .product {
     display: block;
-    width: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .num {
@@ -152,7 +138,7 @@
 
 .minus {
     border-color: transparent;
-    background-color: rgba(255, 140, 140, 0.63);
+    background-color: red;
 }
 
 .plus {
@@ -221,25 +207,17 @@
     display: block;
     font-size: 15px;
     font-family: Arial;
-    background-color: dimgrey;
-    border-radius: 4px;
-    color: ghostwhite;
-    padding: 3px;
-    margin: 3px;
-}
 
-.bought {
-    text-decoration: line-through;
 }
 
 .circle {
-    display: inline;
+    display: block;
+    width: 15px;
+    text-align: center;
     font-size: 13px;
     background-color: orange;
     color: #2c2b2a;
-    border-radius: 70%;
-    padding-right: 4px;
-    padding-left: 4px;
+    border-radius: 50%;
     margin: 2px;
 }
 
@@ -320,9 +298,25 @@
 
 .TP:hover::before {
     visibility: visible;
-    transform:  scale(1, 1);
+    transform: scale(1, 1);
     bottom: 110%;
     opacity: 1;
 }
+
+.back{
+    justify-content: space-evenly;
+    background-color: dimgrey;
+    border-radius: 4px;
+    color: ghostwhite;
+    padding: 3px;
+    margin: 3px;
+}
+
+.hide {
+    display: none;
+
+}
+
+
 
 

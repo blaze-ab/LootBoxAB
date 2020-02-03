@@ -14,70 +14,51 @@
                 <button class="add TP" data-tooltip="Click to add product to your cart" type="button"> Add</button>
             </div>
         </div>
-        <div class="flex b">
-            <div class="part" style=" justify-content: flex-start;">
-                <div class="product tomatoes"> Tomatoes</div>
-            </div>
-            <div class="part" style=" justify-content: center;">
-                <div class="num"> 1</div>
-            </div>
-            <div class="part" style=" justify-content: flex-end;">
-                <button class="notBought TP" data-tooltip="Click to return bought product" type="button"> Return
-                </button>
-            </div>
+        <div class="products">
+
         </div>
-        <div class="flex b">
-            <div class="part" style=" justify-content: flex-start;">
-                <div class="product">Cookies</div>
-            </div>
-            <div class="part" style=" justify-content: center;">
-                <span>
-                <button class="signs minus TP" data-tooltip="Click to remove one" type="button"> - </button>
-                <div class="num"> 7 </div>
-                <button class="signs plus TP" data-tooltip="Click to add one" type="button"> + </button>
-                </span>
-            </div>
-            <div class="part" style=" justify-content: flex-end;">
-                <div class="sh">
-                    <button class="Buy TP" data-tooltip="Click to buy" type="button"> Buy</button>
-                    <button class="x TP" data-tooltip="Click to remove from your cart" type="button"> x</button>
+        <div id="item" class="hide">
+            <div class="flex b">
+                <div class="part" style=" justify-content: flex-start;">
+                    <div class="product">Cookies</div>
                 </div>
-            </div>
-        </div>
-        <div style="border: 0px;" class="flex b">
-            <div class="part" style=" justify-content: flex-start;">
-                <div class="product">Cheese</div>
-            </div>
-            <div class="part" style=" justify-content: center;">
+                <div class="part" style=" justify-content: center;">
                 <span>
                 <button class="signs minus TP" data-tooltip="Click to remove one" type="button"> - </button>
                 <div class="num"> 1 </div>
                 <button class="signs plus TP" data-tooltip="Click to add one" type="button"> + </button>
-            </span>
-            </div>
-            <div class="part" style=" justify-content: flex-end;">
-                <div class="sh">
-                    <button class="Buy TP" data-tooltip="Click to buy" type="button"> Buy</button>
-                    <button class="x TP" data-tooltip="Click to remove from your cart" type="button"> x</button>
-                    </button>
+                </span>
+                </div>
+                <div class="part" style=" justify-content: flex-end;">
+                    <div class="sh">
+                        <button class="Buy TP" data-tooltip="Click to buy" type="button"> Buy</button>
+                        <button class="x TP" data-tooltip="Click to remove from your cart" type="button"> x</button>
+                        <button class="notBought TP hide" style="position: relative"
+                                data-tooltip="Click to return bought product" type="button"> Return
+                        </button>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
+
     <div class="right">
         <div class="r"> Left:</div>
-        <div class="flex r">
-            <div class="pr"> Cookies
-                <div class="circle"> 7</div>
-            </div>
-            <div class="pr"> Cheese
-                <div class="circle"> 1</div>
-            </div>
+        <div style="overflow:auto;" class="toBuy flex r">
+
         </div>
+
         <div class="r"> Bought:</div>
-        <div style="border: 0px;" class="flex r bought">
-            <div class="pr"> Tomatoes
-                <div class="circle"> 1</div>
+        <div style="border: 0px; overflow:auto;"  class="bought flex r" >
+
+        </div>
+        <div id="item2" class="hide">
+            <div clas>
+                <div class="flex back">
+                    <div class="pr"> Cookies</div>
+                    <div class="circle"> 1</div>
+                </div>
             </div>
         </div>
     </div>
@@ -89,5 +70,7 @@
         <div class="ob"> Borodiuk Oleksandra</div>
     </div>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="buylist.js"></script>
 </body>
 </html>
