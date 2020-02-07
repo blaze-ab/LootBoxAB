@@ -39,9 +39,9 @@
 .main {
     justify-content: space-around;
     max-width: 900px;
-    width: 100%;
     font-size: 17px;
     font-family: Aharoni;
+    width: 100%;
     color: bisque;
     margin: auto;
     padding-top: 10%;
@@ -112,6 +112,15 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.change{
+    color: wheat;
+    font-family: Aharoni;
+    font-size: 17px;
+    background:rebeccapurple;
+    border-color: transparent;
+    outline: none;
 }
 
 .num {

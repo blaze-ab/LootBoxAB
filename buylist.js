@@ -5,21 +5,30 @@ var ITEM = $('#item').html();
 var ITEM2 = $('#item2').html();
 
 $('.add').click(function () {
-    add();
+    var text = document.getElementsByTagName("input")[0];
+    var title = text.value;
+    add(title);
+    text.value = "";
+    text.focus();
 });
 
 document.addEventListener('keydown', function (event) {
     if (event.code == 'Enter') {
-        add();
+        var text = document.getElementsByTagName("input")[0];
+        var title = text.value;
+        add(title);
     }
 });
 
-function add() {
+add("Tomato");
+add("Cheese");
+add("Ice Cream");
+
+function add(title) {
+
     var node = $(ITEM);
     var item = $(ITEM2);
     var item2 = $(ITEM2);
-    var text = document.getElementsByTagName("input")[0];
-    var title = text.value;
 
 
     var product = node.find(".product");
@@ -39,9 +48,37 @@ function add() {
         LEFT.append(item);
         BOUGHT.append(item2);
         item2.css("display", "none");
-        text.value = "";
-        text.focus();
     }
+
+    var change = node.find(".change");
+    product.click(function () {
+        product.css("display", "none");
+        change.css("display", "unset");
+        change.focus();
+        change.val(product.text());
+    });
+    function changeName(){
+        var title = change.val();
+        if (title != "") {
+            change.css("display", "none");
+            product.text(title);
+            item.find(".pr").text(title);
+            item2.find(".pr").text(title);
+            product.css("display", "block");
+        } else {
+            change.focus();
+            change.val("");
+        }
+    };
+    document.addEventListener('keydown', function (event) {
+        if (event.code == 'Enter') {
+           changeName();
+        }
+    });
+    change.blur(function () {
+        changeName();
+    });
+
 
     x.click(function () {
         node.remove();
@@ -64,13 +101,14 @@ function add() {
         var a = num.text();
         var n = parseInt(a, 10) + 1;
         num.text(n);
-        signs(item, item2, n)
+        signs(item, item2, n);
     });
 
     minus.click(function () {
         var a = num.text();
         var n = parseInt(a, 10) - 1;
         num.text(n);
+        signs(item, item2, n);
         if (parseInt(num.text(), 10) === 1) {
             minus.attr('disabled', true);
             ability = true;
